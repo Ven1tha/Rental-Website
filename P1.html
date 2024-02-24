@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>McLaren P1</title>
+    <link href="Styles/P1.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images\Benson_s-logos_transparent.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img class="imgscale" src="Images\Benson_s-logos_transparent.png"></a></div>
+        <ul class="nav-links">
+        <div class="menu">
+        <li><a href="index.html"><b class="homec">Home</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li class="services">
+        <a href="cars.html"><b>Cars</b></a>
+        <ul class="dropdown">
+        <li><a href="P1.html">McLaren P1</a></li>
+        <li><a href="991 GT2.html">Porsche 991 GT2RS Clubsport</a></li>
+        <li><a href="RB-18.html">2022 Formula 1 RB-18</a></li>
+        <li><a href="HuracanSTO.html">Lamborghini Huracan</a></li>
+        </ul>
+        </li>
+        <li><a href="pricing.html"><b>Pricing</b></a></li>
+        <li><a href="contact.html"><b>Contact</b></a></li>
+        </div>
+        </ul>
+        </nav>
+
+
+        <section class="hero">
+
+            <div class="hero-content">
+              
+               <h1 class="hero-title">
+                    McLaren P1
+               </h1>
+                 
+               <h2 class="hero-subtitle">
+                    903 HP | 720 NM Torque | 0-100 KPH 2.5s
+               </h2>
+                 
+               <button type="button" class="hero-button" onclick="location.href='cars.html'" title="Find Out More About Our Cars"><b>Our Cars:</b></button>
+            
+            </div>
+        
+        </section>
+
+
+        <br>
+        <br>
+        <br>
+
+    
+
+<h2><b><u>Overview</u></b></h2>
+
+<div class="flex-container">
+    <div>
+        <img class="imgn" src="Images\P1.png" alt="McLaren P1 Image" title="McLaren P1">
+    </div>
+    <div>
+        <h4 class="desc">This McLaren P1 is not only a magnificent 2-Door Race Car. Rare and exclusive, these cars not only exude style but make a statement. With racing pedigree, this machine can take on just about anything you throw at it. Enjoy the ride!</h4>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img class="imgn" src="Images\P1.jpg" alt="Yellow P1 Exterior" title="Yellow P1">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img class="imgn" src="Images\P1.png" alt="P1 Interior" title="P1 Interior">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img class="imgn" src="Images\P1 2.png" alt="Black P1 Exterior" title="Black P1">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img class="imgn" src="Images\P1 3.webp" alt="Black P1 In Motion" title="Rolling P1">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  
+    <div class="row">
+      <div class="column">
+        <img class="imgn demo cursor" src="Images\P1.jpg" onclick="currentSlide(1)" alt="Yellow P1 Exterior" title="Yellow P1">
+      </div>
+      <div class="column">
+        <img class="imgn demo cursor" src="Images\P1.png" onclick="currentSlide(2)" alt="P1 Interior" title="P1 Interior">
+      </div>
+      <div class="column">
+        <img class="imgn demo cursor" src="Images\P1 2.png" onclick="currentSlide(3)" alt="Black P1 Exterior" title="Black P1">
+      </div>
+      <div class="column">
+        <img class="imgn demo cursor" src="Images\P1 3.webp" onclick="currentSlide(4)" alt="Black P1 In Motion" title="Rolling P1">
+      </div>
+      </div>
+      </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+<br>
+<br>
+<br>  
+<br>
+<br>
+<br>
+
+
+
+<iframe class="iframe" src="https://www.youtube.com/embed/og-cW8zMGBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<br>
+<br>
+<br>
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.instagram.com/?hl=en" target="_blank"><img src="Images\INS.png" alt="Instagram Icon" title="Instagram"></a><a href="https://www.snapchat.com/" target="_blank"><img src="Images\snap.png" alt="Snapchat Logo" title="Snapchat"></a><a href="https://twitter.com/?lang=en" target="_blank"><img src="Images\twat.png" alt="Twitter Logo" title="Twitter"></a><a href="https://www.facebook.com/" target="_blank"><img src="Images\face.png" alt="Facebook Logo" title="Facebook"></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="pricing.html">Pricing</a></li>
+                    <li class="list-inline-item"><a href="about.html">About</a></li>
+                    <li class="list-inline-item"><a href="t&c.html">Terms & Conditions</a></li>
+                    <li class="list-inline-item"><a href="copyright.html">Copyright</a></li>
+                </ul>
+                <p class="copyright">Benson's Rentals © 2022</p>
+            </footer>
+          </div>
+</body>
+</html>

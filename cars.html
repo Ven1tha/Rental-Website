@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cars</title>
+    <link href="Styles/carsstyle.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images\Benson_s-logos_transparent.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img class="imgscale" src="Images\Benson_s-logos_transparent.png"></a></div>
+        <ul class="nav-links">
+        <div class="menu">
+        <li><a href="index.html"><b class="homec">Home</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li class="services">
+        <a href="cars.html"><b>Cars</b></a>
+        <ul class="dropdown">
+        <li><a href="P1.html">McLaren P1</a></li>
+        <li><a href="991 GT2.html">Porsche 991 GT2RS Clubsport</a></li>
+        <li><a href="RB-18.html">2022 Formula 1 RB-18</a></li>
+        <li><a href="HuracanSTO.html">Lamborghini Huracan</a></li>
+        </ul>
+        </li>
+        <li><a href="pricing.html"><b>Pricing</b></a></li>
+        <li><a href="contact.html"><b>Contact</b></a></li>
+        </div>
+        </ul>
+        </nav>
+
+
+        <section class="hero">
+
+            <div class="hero-content">
+              
+               <h1 class="hero-title">
+                    Our Vehicles
+               </h1>
+                 
+               <h2 class="hero-subtitle">
+                    Pick The Best Vehicle For Your Experience!
+               </h2>
+                 
+               <button type="button" class="hero-button" onclick="location.href='pricing.html'" title="Vehicle Pricing"><b>Vehicle Pricing:</b></button>
+            
+            </div>
+        
+        </section>
+
+        <br>
+        <br>
+
+        <input id="searchbar" onkeyup="search_cars()" type="text"
+        name="search" placeholder="Search Vehicles">
+      
+    <ol id='list'>
+        <li class="cars"><h3><b><u>McLaren P1</u></b></h3>
+
+          <div class="slideshow-container">
+  
+              <div class="mySlides fade">
+                <img class="imgnorm" src="Images\P1 2.png" alt="McLaren P1 Exterior" title="McLaren P1 Exterior">
+              </div>
+              
+              <div class="mySlides fade">
+                <img class="imgnorm" src="Images\P1.jpg" alt="McLaren P1 Exterior" title="McLaren P1 Exterior">
+              </div>
+              
+              <div class="mySlides fade">
+                <img class="imgnorm" src="Images\P1.png" alt="McLaren P1 Interior" title="McLaren P1 Interior">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+          </div>
+          
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1,0)"></span> 
+                <span class="dot" onclick="currentSlide(2,0)"></span> 
+                <span class="dot" onclick="currentSlide(3,0)"></span> 
+              </div>
+          
+              <script>
+              var slideIndex = [1,1,1,1,1];
+          var slideId = ["mySlides", "mySlides1", "mySlides2", "mySlides3"]
+          showSlides(1, 0);
+          showSlides(1, 1);
+          showSlides(1, 2);
+          showSlides(1, 3);
+          showSlides(1, 4);
+          
+          function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+          }
+          function currentSlide(n, no) {
+            showSlides(slideIndex[no] = n, no);
+          }
+          function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}    
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+          }
+          </script></li>
+        <li class="cars"><h3><b><u>Porsche 991 GT2RS Clubsport</u></b></h3>
+
+          <div class="slideshow-container">
+          
+              <div class="mySlides1 fade">
+                <img class="imgnorm" src="Images\Pork2.jpg" alt="Porsche 991 GT2RS Clubsport Exterior" title="Porsche 991 GT2RS Clubsport Exterior">
+              </div>
+              
+              <div class="mySlides1 fade">
+                <img class="imgnorm" src="Images\Pork.png" alt="Porsche 991 GT2RS Clubsport Exterior" title="Porsche 991 GT2RS Clubsport Exterior">
+              </div>
+              
+              <div class="mySlides1 fade">
+                <img class="imgnorm" src="Images\Pork1.jpg" alt="Porsche 991 GT2RS Clubsport Exterior" title="Porsche 991 GT2RS Clubsport Exterior">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+          </div>
+          
+          <br>
+
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1,1)"></span> 
+                <span class="dot" onclick="currentSlide(2,1)"></span> 
+                <span class="dot" onclick="currentSlide(3,1)"></span> 
+              </div>
+          
+              <script>
+              var slideIndex = [1,1,1,1,1];
+          var slideId = ["mySlides", "mySlides1", "mySlides2", "mySlides3"]
+          showSlides(1, 0);
+          showSlides(1, 1);
+          showSlides(1, 2);
+          showSlides(1, 3);
+          showSlides(1, 4);
+          
+          function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+          }
+          function currentSlide(n, no) {
+            showSlides(slideIndex[no] = n, no);
+          }
+          function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}    
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+          }
+          </script></li>
+        <li class="cars"><h3><b><u>2022 Formula 1 Red Bull RB-18</u></b></h3>
+
+          <div class="slideshow-container">
+          
+              <div class="mySlides2 fade">
+                <img class="imgnorm" src="Images/rb1.jpg" alt="Red Bull RB-18 F1 Exterior" title="Red Bull RB-18 Exterior">
+              </div>
+              
+              <div class="mySlides2 fade">
+                <img class="imgnorm" src="Images/RB.png" alt="Red Bull RB-18 F1 Exterior" title="Red Bull RB- Exterior">
+              </div>
+              
+              <div class="mySlides2 fade">
+                <img class="imgnorm" src="Images\F1 int.webp" alt="Red Bull RB-18 F1 Interior" title="Red Bull RB-18 Interior">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+          </div>
+          
+          <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1,2)"></span> 
+                <span class="dot" onclick="currentSlide(2,2)"></span> 
+                <span class="dot" onclick="currentSlide(3,2)"></span> 
+              </div>
+          
+              <script>
+              var slideIndex = [1,1,1,1,1];
+          var slideId = ["mySlides", "mySlides1", "mySlides2", "mySlides3"]
+          showSlides(1, 0);
+          showSlides(1, 1);
+          showSlides(1, 2);
+          showSlides(1, 3);
+          showSlides(1, 4);
+          
+          function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+          }
+          function currentSlide(n, no) {
+            showSlides(slideIndex[no] = n, no);
+          }
+          function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}    
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+          }
+          </script></li>
+        <li class="cars"><h3><b><u>Lamborghini Huracan</u></b></h3>
+
+          <div class="slideshow-container">
+          
+              <div class="mySlides3 fade">
+                <img class="imgnorm" src="Images\Hura 1.jpg" alt="Lamborghini Huracan Exterior" title="Lamborghini Huracan Exterior">
+              </div>
+              
+              <div class="mySlides3 fade">
+                <img class="imgnorm" src="Images\Hura 2.jpg" alt="Lamborghini Huracan Exterior" title="Lamborghini Huracan Exterior">
+              </div>
+              
+              <div class="mySlides3 fade">
+                <img class="imgnorm" src="Images\Huracan Int.jpg" alt="Lamgorghini Huracan Interior" title="Lamborghini Huracan Interior">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1,3)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1,3)">&#10095;</a>
+          </div>
+          
+          <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1,3)"></span> 
+                <span class="dot" onclick="currentSlide(2,3)"></span> 
+                <span class="dot" onclick="currentSlide(3,3)"></span> 
+              </div>
+          
+              <script>
+              var slideIndex = [1,1,1,1,1];
+          var slideId = ["mySlides", "mySlides1", "mySlides2", "mySlides3"]
+          showSlides(1, 0);
+          showSlides(1, 1);
+          showSlides(1, 2);
+          showSlides(1, 3);
+          showSlides(1, 4);
+          
+          function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+          }
+          function currentSlide(n, no) {
+            showSlides(slideIndex[no] = n, no);
+          }
+          function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}    
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+          }
+          </script></li>
+    </ol>
+      
+    <script src="Java\cars.js"></script>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.instagram.com/?hl=en" target="_blank"><img src="Images\INS.png" alt="Instagram Icon" title="Instagram"></a><a href="https://www.snapchat.com/" target="_blank"><img src="Images\snap.png" alt="Snapchat Logo" title="Snapchat"></a><a href="https://twitter.com/?lang=en" target="_blank"><img src="Images\twat.png" alt="Twitter Logo" title="Twitter"></a><a href="https://www.facebook.com/" target="_blank"><img src="Images\face.png" alt="Facebook Logo" title="Facebook"></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="pricing.html">Pricing</a></li>
+                    <li class="list-inline-item"><a href="about.html">About</a></li>
+                    <li class="list-inline-item"><a href="t&c.html">Terms & Conditions</a></li>
+                    <li class="list-inline-item"><a href="copyright.html">Copyright</a></li>
+                </ul>
+                <p class="copyright">Benson's Rentals © 2022</p>
+            </footer>
+          </div>
+</body>
+</html>
